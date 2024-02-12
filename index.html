@@ -15,19 +15,25 @@
       <div class="container_caculator">
         <div id="display">
           <div class="container-display">
-            <input type="text" id="previous-display"/> 
-            <input type="text" id="current-display" oninput="validateInput()"/>
+            <div id="previous-display"></div>
+            <input type="text" id="current-display" oninput="validateInput()" />
           </div>
         </div>
         <div class="caculator_keys">
           <button class="key--operator" data-action="percentage">%</button>
           <button class="key--clearE">CE</button>
           <button class="key--clear">C</button>
-          <button class="key--delete"><i class="fa-solid fa-delete-left"></i></button>
+          <button class="key--delete">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
           <button class="key--number">1/x</button>
-          <button class="key--operator" data-action="sqrt"><i class="fa-solid fa-square-root-variable"></i></button>
+          <button class="key--operator" data-action="sqrt">
+            <i class="fa-solid fa-square-root-variable"></i>
+          </button>
           <button class="key--reset">x²</button>
-          <button class="key--operator" data-action="divide"><i class="fa-solid fa-divide fa-2xs"></i></button>
+          <button class="key--operator" data-action="divide">
+            <i class="fa-solid fa-divide fa-2xs"></i>
+          </button>
           <button class="key--number">1</button>
           <button class="key--number">2</button>
           <button class="key--number">3</button>

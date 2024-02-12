@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body {
   display: flex;
   flex-direction: row;
-  background-color: beige;
+  /* background-color: beige; */
+  background: linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
   align-items: center;
   justify-content: center;
   height: 100dvh;
@@ -17,16 +19,35 @@ button {
   cursor: pointer;
   font-size: 2rem;
   border-radius: .5rem;
+  transition: 200ms ease-in-out;
+}
+
+button:hover {
+    transition: 200ms ease-in-out;
+    background-color: rgba(0, 0, 255, 0.1);
 }
 
 input {
-  width: 80%;
+  width: 82%;
   height: 2rem;
   border: none;
-  margin: 0 1.8rem;
+  margin: 0 2rem;
   text-align: right;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   outline: none;
+}
+
+#previous-display {
+    height: 2rem;
+    width: 19rem;
+    /* background-color: black; */
+    text-align: right;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 i {
@@ -45,9 +66,9 @@ i {
 }
 
 .container {
-  width: 20rem;
+  width: 25rem;
   height: 24rem;
-  background-color: #e6dfdf;
+  background-color: rgba(255, 255, 255, 0.4); /* 50% transparent white */
   border-radius: 2rem;
 }
 
@@ -66,6 +87,12 @@ i {
 }
 
 .container .caculator_keys .key--equal {
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.8);
     color: white;
+    transition: 200ms ease-in-out;
+}
+.container .caculator_keys .key--equal:hover {
+    background-color: rgba(0, 0, 255, 0.6);
+    color: white;
+    transition: 200ms ease-in-out;
 }

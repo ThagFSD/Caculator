@@ -10,6 +10,10 @@ const keyPow = document.querySelector(".key--pow");
 const keySqrt = document.querySelector(".key--sqrt");
 const keyNegative = document.querySelector(".key--negative");
 const keyFraction = document.querySelector(".key--fraction");
+const keyPow = document.querySelector("key--pow");
+const keySqrt = document.querySelector("key--sqrt");
+const keyNegative = document.querySelector("key--negative");
+const keyFraction = document.querySelector("key--fraction");
 
 // Default currentDisplay value
 function secondDisplay() {
@@ -191,21 +195,7 @@ keyEqual.addEventListener("click", function () {
     console.log("Equal clicked !");
 });
 
-// Delete key
-keyDelete.addEventListener("click", function () {
-    let str = currentDisplay.value;
-    // Check if the string is not empty and the first character is not "0"
-    if (str.length > 0 && str.charAt(0) !== 0) {
-        // Remove the last character using substring
-        str = str.substring(0, str.length - 1);
-        // Update the input value with the modified string
-        currentDisplay.value = str;
-    }
-    // Check if the string is emmpty 
-    if (currentDisplay.value === "") {
-        // Reset to default value
-        currentDisplay.value = "0";
-    }
+keyDelete.addEventListener("click", function() {
     // console.log("Delete clicked !");
     currentDisplay.value = formatNumberWithComa(currentDisplay.value);
     currentDisplay.value = formatNumberWithComa(currentDisplay.value);
